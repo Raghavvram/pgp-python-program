@@ -5,10 +5,7 @@ if __name__ == "__main__":
     email = input("Enter your email address for the key pair: ")
     fingerprint = create_keys(email)
     print(f"Key pair generated. Key fingerprint: {fingerprint}")
-    
-    # Encrypt the message
-    user_input = input("Enter the message to encrypt: ")
-    encrypted_message = encrypt_message(fingerprint, user_input)
+er_input)
 
 ```
 
