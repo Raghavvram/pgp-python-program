@@ -1,28 +1,4 @@
 
-    encrypted_data = gpg.encrypt(
-        message,
-        recipients=fingerprint,
-        always_trust=True
-    )
-    return str(encrypted_data)
-
-def send_email(sender_email, sender_password, recipient_email, subject, body):
-    # Create the email content
-    msg = MIMEMultipart()
-    msg['From'] = sender_email
-    msg['To'] = recipient_email
-    msg['Subject'] = subject
-    msg.attach(MIMEText(body, 'plain'))
-    
-    # Connect to the SMTP server and send the email
-    try:
-        with smtplib.SMTP('smtp.gmail.com', 587) as server:
-            server.starttls()  # Secure the connection
-            server.login(sender_email, sender_password)  # Login
-            server.sendmail(sender_email, recipient_email, msg.as_string())
-        print("Email sent successfully.")
-    except Exception as e:
-        print(f"Failed to send email: {e}")
 
 if __name__ == "__main__":
     # Key creation
