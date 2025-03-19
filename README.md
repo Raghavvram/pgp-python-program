@@ -69,11 +69,6 @@ if __name__ == "__main__":
     send_email(sender_email, sender_password, recipient_email, subject, encrypted_message)
 ```
 
-### Key Additions:
-1. **Email Sending**: The `send_email` function uses the `smtplib` library to send the encrypted message.
-2. **User Inputs**: User provides their email, password (or app password for security), and recipient email.
-3. **SMTP Server**: The program uses Gmail's SMTP server (`smtp.gmail.com`), but you can adjust this for other email services if needed.
-
 ### Pre-requisites:
 1. Enable **"Allow less secure apps"** or generate an **App Password** in your Gmail account for authentication.
 2. Install the necessary library using: `pip install python-gnupg`.
