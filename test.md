@@ -1,3 +1,4 @@
+## GPG - PYTHON
 This Python program uses the `gnupg` library to generate PGP keys, encrypt user input, and return the encrypted output. The `python-gnupg` library is a wrapper around GPG and allows you to manage keys and encryption programmatically. Make sure you have GPG installed on your system and the `python-gnupg` library (`pip install python-gnupg`) before running this code:
 
 ```python
@@ -45,4 +46,4 @@ if __name__ == "__main__":
 2. **Encryption**: The user enters a message that gets encrypted using the public key.
 3. **Requirements**: You must have GPG installed on your system. Use `gpg --version` to check if it’s installed. Install `python-gnupg` via `pip`.
 
-Let me know if you'd like me to explain any part of the code or assist with setting up GPG on your system! 🚀
+
