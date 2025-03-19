@@ -1,12 +1,5 @@
 
 
-if __name__ == "__main__":
-    # Key creation
-    email = input("Enter your email address for the key pair: ")
-    fingerprint = create_keys(email)
-    print(f"Key pair generated. Key fingerprint: {fingerprint}")
-er_input)
-
 ```
 
 ### Pre-requisites:
