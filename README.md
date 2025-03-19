@@ -1,4 +1,3 @@
-Here's an updated Python program that encrypts the user's input message using PGP and sends the encrypted message as an email. This program uses the `smtplib` library for sending emails and builds on the earlier implementation:
 
 ```python
 import gnupg
