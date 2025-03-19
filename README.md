@@ -1,27 +1,4 @@
 
-```python
-import gnupg
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-
-def create_keys(email):
-    # Initialize GPG instance
-    gpg = gnupg.GPG()
-    
-    # Generate key pair
-    input_data = gpg.gen_key_input(
-        name_email=email,
-        key_type="RSA",
-        key_length=2048
-    )
-    key = gpg.gen_key(input_data)
-    return key.fingerprint
-
-def encrypt_message(fingerprint, message):
-    gpg = gnupg.GPG()
-    
-    # Encrypt the message for the key owner
     encrypted_data = gpg.encrypt(
         message,
         recipients=fingerprint,
